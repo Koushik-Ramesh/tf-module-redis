@@ -22,6 +22,6 @@ resource "aws_security_group" "allows_redis" {
     }
 
     tags = {
-        Name = "roboshop-${varENV}-redis-sg"
+        Name = "roboshop-${var.ENV}-redis-sg"
     }
 }
